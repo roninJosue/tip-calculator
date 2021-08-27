@@ -1,0 +1,23 @@
+.controls {
+  flex-basis: 45%;
+  background-color: orange;
+  display: flex;
+  padding: 1rem;
+
+  &Input {
+    display: flex;
+    flex-direction: column;
+    align-items: self-end;
+
+    &Text {
+      display: block;
+      width: 100%;
+      padding: .375rem .75rem;
+      font-size: 1rem;
+      border-radius: .25rem;
+      border: 1px solid #ced4da;
+      text-align: right;
+      color: hsl(183, 100%, 15%);;
+    }
+  }
+}
