@@ -1,13 +1,22 @@
 .controls {
   flex-basis: 45%;
-  background-color: orange;
   display: flex;
   padding: 1rem;
+  flex-direction: column;
+
+  &Label{
+    font-size: .8rem;
+  }
 
   &Input {
     display: flex;
     flex-direction: column;
     align-items: self-end;
+    margin-bottom: 1rem;
+
+    &:focus-visible{
+      border: red 2px solid;
+    }
 
     &Text {
       display: block;
@@ -17,7 +26,24 @@
       border-radius: .25rem;
       border: 1px solid #ced4da;
       text-align: right;
-      color: hsl(183, 100%, 15%);;
+      color: hsl(183, 100%, 15%);
+      font-weight: bold;
+      background-color: #f3f8fb;
     }
+
+    &Icon {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      font-size: .8rem;
+    }
+  }
+
+  &Group{
+    position: relative;
+    //position: absolute;
+    /*display: flex;
+    align-items: center;
+    justify-content: space-between;*/
   }
 }
