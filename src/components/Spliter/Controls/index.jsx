@@ -7,7 +7,6 @@ const Controls = () => {
     <div className={styles.controls}>
       <CustomInput label={'Bill'}  inputId={'bill'} inputIcon={'dollar'}/>
       <CustomInput label={'Number of people'} inputId={'user'} inputIcon={'user'}/>
-      <CustomInput label={'Number of people'} inputId={'user'} />
     </div>
   )
 }

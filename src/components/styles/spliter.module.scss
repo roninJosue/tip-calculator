@@ -2,8 +2,8 @@
 
 .spliter{
   background-color: #fff;
-  border-radius: 5px;
-  width: 80%;
+  border-radius: 15px;
+  width: 50%;
   height: auto;
   display: flex;
   padding: 2rem;
@@ -11,5 +11,9 @@
 
   @include respond(tab-port){
     flex-direction: column;
+  }
+
+  @include respond(phone){
+    width: 90%;
   }
 }

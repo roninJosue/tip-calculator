@@ -1,11 +1,17 @@
+@import "./abstracts/mixins";
+
 .controls {
   flex-basis: 45%;
   display: flex;
-  padding: 1rem;
   flex-direction: column;
+
+  @include respond(phone){
+    flex-basis: 100%;
+  }
 
   &Label{
     font-size: .8rem;
+    color: #627073;
   }
 
   &Input {
@@ -14,21 +20,24 @@
     align-items: self-end;
     margin-bottom: 1rem;
 
-    &:focus-visible{
-      border: red 2px solid;
-    }
-
     &Text {
       display: block;
       width: 100%;
       padding: .375rem .75rem;
       font-size: 1rem;
       border-radius: .25rem;
-      border: 1px solid #ced4da;
+      border: 2px solid #f3f8fb;
       text-align: right;
       color: hsl(183, 100%, 15%);
       font-weight: bold;
       background-color: #f3f8fb;
+      &:hover,
+      &:active,
+      &:focus-visible{
+        border: #61aaa1 2px solid;
+        outline: none;
+        cursor: pointer;
+      }
     }
 
     &Icon {
@@ -36,11 +45,15 @@
       top: 10px;
       left: 10px;
       font-size: .8rem;
+      color: #9eb2b3;
     }
   }
 
   &Group{
     position: relative;
+    @include respond(tab-port){
+      width: 100%;
+    }
     //position: absolute;
     /*display: flex;
     align-items: center;

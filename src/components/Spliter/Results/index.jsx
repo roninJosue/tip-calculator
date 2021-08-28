@@ -3,7 +3,9 @@ import styles from "./../../styles/results.module.scss"
 
 const Results = () => {
   return (
-    <h3 className={styles.results}>Results</h3>
+    <div className={styles.results}>
+      <h3>Results</h3>
+    </div>
   )
 }
 
