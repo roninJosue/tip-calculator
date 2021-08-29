@@ -6,7 +6,7 @@ import useStore from "../../store/store"
 const Button = (props) => {
   //const [percentage, setPercentage] = useState(0);
 
-  const {buttonText, dataPercentage} = props
+  const {buttonText, dataPercentage, second} = props
   const updPercentage = useStore((state) => state.updateTipPercentage)
 
   const handleClick = (e) => {
@@ -17,7 +17,7 @@ const Button = (props) => {
     <button
       data-percentage={dataPercentage}
       onClick={e => handleClick(e.target)}
-      className={styles.button}>
+      className={second ? styles.button + ' ' + styles.button2 : styles.button}>
       {buttonText}
     </button>
   )

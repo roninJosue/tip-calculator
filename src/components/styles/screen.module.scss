@@ -1,0 +1,32 @@
+.screen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:not(:last-child){
+    margin-bottom: 2rem;
+  }
+
+  &Group{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &Label {
+    font-weight: bold;
+    font-size: .8rem;
+  }
+
+  &Label_2{
+    font-weight: bold;
+    font-size: .6rem;
+    color: #c5e4e7;
+  }
+
+  &Number{
+    color: #26c4ad;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+}

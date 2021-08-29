@@ -16,6 +16,12 @@
   font-weight: bold;
   font-family: "Space Mono", sans-serif;
 
+  &2 {
+    width: 100%;
+    background-color: #26c2ad;
+    text-transform: uppercase;
+  }
+
   &:hover {
     background-color: #9fe8df;
     color: #00474b;

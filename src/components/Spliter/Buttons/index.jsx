@@ -1,6 +1,7 @@
 import React from "react";
 import styles from './../../styles/buttons.module.scss'
 import Button from "./Button";
+import CustomInput from "../Controls/CustomInput";
 
 const ButtonsContainer = () => {
   return(<div className={styles.buttonsContainer}>
@@ -9,6 +10,7 @@ const ButtonsContainer = () => {
     <Button buttonText='15%' dataPercentage={0.15} />
     <Button buttonText='25%' dataPercentage={0.25} />
     <Button buttonText='50%' dataPercentage={0.5} />
+    <CustomInput placeHolder={'Custom'}/>
   </div>)
 }
 

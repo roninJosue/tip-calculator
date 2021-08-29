@@ -4,10 +4,10 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faDollarSign, faUser} from "@fortawesome/free-solid-svg-icons"
 
 const CustomInput = (props) => {
-  const {label, inputId, inputIcon, value, upd} = props;
+  const {label, inputId, inputIcon, value, upd, placeHolder} = props;
 
   const handleChange = (value) => {
-    if (typeof upd === 'function'){
+    if (typeof upd === 'function') {
       upd(Number(value))
     }
   }
@@ -24,7 +24,8 @@ const CustomInput = (props) => {
                value={value}
                className={styles.controlsInputText}
                type="number"
-               id={inputId}/>
+               id={inputId}
+        placeholder={placeHolder}/>
       </div>
     </div>
   )
