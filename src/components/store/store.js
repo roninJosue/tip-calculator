@@ -19,7 +19,8 @@ const useStore = create((set, get) => ({
     const c = b / people
 
     return ((get().bill / get().people) + c).toFixed(2)
-  }
+  },
+  reset: () => set(state=>({bill: 0, people:0}))
 }))
 
 export default useStore;
