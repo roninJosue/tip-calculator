@@ -45,8 +45,9 @@
 
     &Icon {
       position: absolute;
-      top: 10px;
-      left: 10px;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      left: 15px;
       font-size: .8rem;
       color: #9eb2b3;
     }
