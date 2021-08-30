@@ -13,9 +13,9 @@ const Controls = () => {
 
   return (
     <div className={styles.controls}>
-      <CustomInput upd={updateBill} value={bill} label={'Bill'}  inputId={'bill'} inputIcon={'dollar'}/>
+      <CustomInput input2={false} upd={updateBill} value={bill} label={'Bill'}  inputId={'bill'} inputIcon={'dollar'}/>
       <ButtonsContainer per={percentage} />
-      <CustomInput upd={updatePeople} value={people} label={'Number of people'} inputId={'user'} inputIcon={'user'}/>
+      <CustomInput input2={false} upd={updatePeople} value={people} label={'Number of people'} inputId={'user'} inputIcon={'user'}/>
     </div>
   )
 }

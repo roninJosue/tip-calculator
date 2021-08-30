@@ -10,6 +10,10 @@
   flex-direction: column;
   justify-content: space-between;
 
+  @include respond(tab-land){
+    min-height: 40vh;
+  }
+
   @include respond(phone){
     flex-basis: 100%;
   }

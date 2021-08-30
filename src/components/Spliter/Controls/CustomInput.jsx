@@ -4,16 +4,28 @@ import {FontAwesomeIcon} from "@fortawesome/react-fontawesome"
 import {faDollarSign, faUser} from "@fortawesome/free-solid-svg-icons"
 
 const CustomInput = (props) => {
-  const {label, inputId, inputIcon, value, upd, placeHolder} = props;
+  const {label,
+    inputId,
+    inputIcon,
+    value,
+    upd: update,
+    placeHolder,
+    updPercentage,
+    input2
+  } = props;
 
   const handleChange = (value) => {
-    if (typeof upd === 'function') {
-      upd(Number(value))
+    if (typeof update === 'function') {
+      update(Number(value))
+    }
+
+    if (typeof updPercentage === 'function'){
+      updPercentage(Number(value))
     }
   }
 
   return (
-    <div className={styles.controlsInput}>
+    <div className={input2 ? styles.controlsInput + ' ' + styles.controlsInput2 : styles.controlsInput}>
       <label className={styles.controlsLabel} htmlFor={inputId}>{label}</label>
       <div className={styles.controlsGroup}>
         {

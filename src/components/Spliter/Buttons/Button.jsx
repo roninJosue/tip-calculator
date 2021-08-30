@@ -3,8 +3,7 @@ import styles from './../../styles/buttons.module.scss'
 import useStore from "../../store/store"
 
 const Button = (props) => {
-  const {buttonText, dataPercentage, second, reset} = props
-  const updPercentage = useStore((state) => state.updateTipPercentage)
+  const {buttonText, dataPercentage, second, reset, updPercentage} = props
 
   const handleClick = (e) => {
     if (second) {
